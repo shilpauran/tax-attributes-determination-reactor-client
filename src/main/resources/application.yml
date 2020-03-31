@@ -1,0 +1,8 @@
+---
+spring:
+ rabbitmq:
+   host: "${vcap.services.rabbitmq.credentials.hostname}"
+   password: "${vcap.services.rabbitmq.credentials.password}"
+   port: "${vcap.services.rabbitmq.credentials.port}"
+   username: "${vcap.services.rabbitmq.credentials.username}"
+   virtual-host: "${vcap.services.rabbitmq.credentials.virtual_host:/}"
